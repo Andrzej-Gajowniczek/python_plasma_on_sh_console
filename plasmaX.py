@@ -119,7 +119,7 @@ def main(ekr):
                 if(yb2<0):
                     yb2=yb2+element
                     
-                for x in range(0,zakres_x):
+                for x in range(0,zakres_x-1):
                     xb=xb+xd
                     if(xb>=element):
                         xb=xb-element
@@ -134,11 +134,11 @@ def main(ekr):
                     z=int((six[xb]+six[xb2]+six[yb]+six[yb2])/3.9)
                     ekr.addch(y,x,chr(9629),curses.color_pair(z+2))
             ekr.refresh()
-            sleep(.02)
+            sleep(.016)
 
     def czarny():
         gr=[' ','🞡','🞢','🞣','🞤','🞥','🞦','🞧','🞧','🞦','🞥','🞤','🞣','🞢','🞡',' ']
-        pi=4.14159
+        pi=3.14159
         figura=0
         xx=0
         yy=0
@@ -225,7 +225,7 @@ def main(ekr):
                 if(yb2<0):
                     yb2=yb2+element
                     
-                for x in range(0,zakres_x):
+                for x in range(0,zakres_x-1):
                     xb=xb+xd
                     if(xb>=element):
                         xb=xb-element
