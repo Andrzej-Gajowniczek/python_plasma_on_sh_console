@@ -137,7 +137,7 @@ def main(ekr):
             sleep(.016)
 
     def czarny():
-        gr=[' ','🞡','🞢','🞣','🞤','🞥','🞦','🞧','🞧','🞦','🞥','🞤','🞣','🞢','🞡',' ']
+        gr=["0","#", "H","=","+","⢿","⢾","⢽","⢻","⢺","⢹","⢸","⢷","⢶","⢵","⢴"]
         pi=3.14159
         figura=0
         xx=0
@@ -170,7 +170,7 @@ def main(ekr):
         lista_kolorow=[]
         
         zakres_figury=int(len(gr)/2)
-        for sx in arange(0,3.14159*2,3.14159*2/element):
+        for sx in arange(0,pi*2,pi*2/element):
             six.append(math.sin(sx)*zakres_figury+zakres_figury)
 
         while True:
@@ -239,7 +239,7 @@ def main(ekr):
                    
                     z=int((six[xb]+six[xb2]+six[yb]+six[yb2])/4)
                     ekr.addch(y,x,gr[z])
-            sleep(.02)
+            sleep(.016)
             ekr.refresh()
                       
     if(curses.can_change_color()==1):
